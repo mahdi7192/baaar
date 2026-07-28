@@ -1,0 +1,69 @@
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/estedad-font@v5.0.0/dist/font-face.css');
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-estedad: 'Estedad', 'Vazirmatn', system-ui, sans-serif;
+    --font-mono: 'Vazirmatn', monospace;
+    --color-electric: #0052FF;
+    --color-electric-light: #4D7CFF;
+  }
+
+  body {
+    font-family: var(--font-estedad);
+    direction: rtl;
+    background-color: #fafafa;
+    color: #0f172a;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Gradient Utilities */
+.bg-gradient-electric {
+  background: linear-gradient(135deg, #0052FF 0%, #4D7CFF 100%);
+}
+
+.text-gradient-electric {
+  background: linear-gradient(135deg, #0052FF 0%, #3B82F6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gradient-electric {
+  border-image: linear-gradient(135deg, #0052FF, #4D7CFF) 1;
+}
+
+/* Dot Pattern Matrix for Dark Sections */
+.bg-dot-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-dot-pattern-light {
+  background-image: radial-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.glass-panel-dark {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Pulse Animation Glow */
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+.animate-glow-pulse {
+  animation: glowPulse 4s infinite ease-in-out;
+}

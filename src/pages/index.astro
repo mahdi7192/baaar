@@ -1,17 +1,21 @@
 ---
-
+import { LandingPage } from '../components/landing/LandingPage';
+import '../styles/global.css';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>بار (Baaar) | پلتفرم هوشمند ارسال، قیمت‌گذاری و مدیریت بار جاده‌ای</title>
+    <meta
+      name="description"
+      content="پلتفرم هوشمند مدیریت ترابری و ارسال بار جاده‌ای (B2B2C). ثبت سریع درخواست بار، تایید و قیمت‌گذاری توسط شرکت باربری و تخصیص مستقیم به رانندگان کامیون."
+    />
+  </head>
+  <body class="bg-slate-50 antialiased selection:bg-blue-500 selection:text-white">
+    <LandingPage client:load />
+  </body>
 </html>
