@@ -1,100 +1,97 @@
-# دیزاین سیستم و راهنمای طراحی پلتفرم بار (Baaar Design System)
+# Design System & UI Specification: Baaar Logistics Platform
 
-> **سبک دیزاین:** مینیمال مدرن (Minimalist Modern) با جهت‌گیری راست‌چین (RTL)  
-> **فونت پایه:** استعداد (Estedad)  
-> **تمرکز:** چابکی عملیاتی، خوانایی بالا، حس پرمیوم و مدرن در پلتفرم ترابری  
-
----
-
-## ۱. فلسفه دیزاین (Design Philosophy)
-
-### ۱.۱. اصل بنیادی (Core Principle)
-**شفافیت از طریق ساختار، هویت از طریق جزییات قاطع.**  
-این دیزاین سیستم بر پایه تضادی هدفمند شکل گرفته است: **خویشتن‌داری در تعداد عناصر، قاطعیت در اجرا.** هر عنصری که در صفحه ظاهر می‌شود باید حق حضور خود را کسب کرده باشد؛ اما همان عناصر با دقت و ظرافتی خیره‌کننده پیاده‌سازی می‌شوند.
-
-فضای خالی (Whitespace) در این سیستم یک فضای پوچ نیست؛ بلکه ابزاری دقیق برای هدایت چشم کاربر است. انیمیشن‌ها صرفاً تزئینی نیستند، بلکه ابزار ارتباطی و اعلام استاتوس لحظه‌ای بار هستند. رنگ‌ها پراکنده نیستند، بلکه در یک گرادینت آبی الکتریسیته (Electric Blue) متمرکز شده‌اند که توجه را مجذوب خود می‌کند.
+> **Design Style:** Minimalist Modern (RTL-Native)  
+> **Primary Font:** Estedad (فونت استعداد)  
+> **Core Focus:** Operational Clarity, High Legibility, Premium Tech Aesthetic for Cargo & Logistics  
 
 ---
 
-### ۱.۲. حس و حال بصری (The Visual Vibe)
+## 1. Design Philosophy
 
-**حرفه‌ای، مطمئن، هنرمدانه و زنده.**
+### 1.1. Core Principle
+**Clarity through structure, character through bold detail.**  
+This design system is built on a deliberate tension: **restraint in quantity, confidence in execution.** Every element present on the screen has earned its place; those elements are executed with deliberate flair, precision, and RTL-native alignment.
 
-این دیزاین حاصل تلاقی دقت یک محصول نرم‌افزاری مدرن (SaaS) با جسارت یک پلتفرم پیشرو ترابری است. حس کیفیت پرمیوم، اعتماد، و امنیت در انتقال بار را تداعی می‌کند.
+Whitespace is not empty space—it is a precision instrument to guide the user's attention through dense freight data. Motion is not frivolous decoration—it communicates live cargo updates and transit statuses. Colors are concentrated into an electrifying **Electric Blue** gradient that commands focus wherever it appears.
 
-**کلیدواژه‌های احساسی:**
-- **مطمئن (Confident):** عناصر دارای سایز قاطع، رنگ‌های پویا و انیمیشن‌های باهدف هستند.
-- **ارتقا یافته (Sophisticated):** استفاده از فونت مدرن «استعداد»، سایه‌پردازی چندلایه و لایه‌های شیشه‌ای (Glassmorphism).
-- **پویا و زنده (Alive):** نشانگرهای نبض‌دار استاتوس بار، انیمیشن‌های نرم شناور و پاسخ‌های لمسی/هاور.
-- **راست‌چین اصیل (Native RTL):** چیدمان کاملاً طبیعی برای زبان فارسی بدون هیچ‌گونه به هم ریختگی در فونت یا آیکون‌ها.
+### 1.2. The Visual Vibe
+**Professional yet design-forward. Confident, alive, and natively Persian (RTL).**
 
----
+Imagine the intersection of a high-tech logistics SaaS dashboard with a sleek creative agency portfolio. This design evokes safety, trust, and high-efficiency freight operations.
 
-## ۲. مشخصات تایپوگرافی (Typography System)
-
-در این دیزاین سیستم، تمامی متون UI، عناوین، و بخش‌های خوانداری بر پایه **فونت مدرن استعداد (Estedad)** با ویژگی متغیر (Variable Font) تنظیم شده‌اند. برای شناسه بارها، پلاک خودرو، مبالغ و کدها از فونت مونو (JetBrains Mono / Vazirmatn Mono) استفاده می‌شود.
-
-### ۲.۱. جدول مقیاس فونت‌ها (Type Scale)
-
-| عنصر | اندازه (Size) | وزن فونت (Weight) | ارتفاع خط (Leading) | فاصله حروف (Tracking) | توضیحات |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **عنوان اصلی هیرو (Hero Headline)** | `text-4xl` تا `text-6xl` | 800 (ExtraBold) | `leading-[1.15]` | `tracking-tight` | کلمه کلیدی دارای متن گرادینت. |
-| **عناوین بخش‌ها (Section Titles)** | `text-2xl` تا `text-4xl` | 700 (Bold) | `leading-snug` | normal | ترکیب با انیمیشن ورود. |
-| **عنوان کارت‌ها (Card Titles)** | `text-lg` تا `text-xl` | 600 (SemiBold) | `leading-normal` | normal | خوانایی سریع در لیست بارها. |
-| **متن بدنه (Body Text)** | `text-base` | 400 (Regular) | `leading-relaxed` (1.7) | normal | متون توضیحی و جزئیات بار. |
-| **برچسب‌ها و مبالغ (Badges & Rates)** | `text-xs` تا `text-sm` | 500 (Medium) / Mono | `leading-none` | normal | شماره بارنامه، پلاک و قیمت‌ها. |
+**Emotional Keywords:**
+- **Confident:** Boldly sizers components, vibrant action colors, and purposeful micro-animations.
+- **Sophisticated:** Dual-layer shadows, glassmorphism overlays (`backdrop-blur`), and variable typography via the **Estedad** font family.
+- **Alive:** Pulsing status indicators, smooth float animations, and responsive touch/hover feedback.
+- **Native RTL:** Seamless right-to-left layout alignment for Persian UI without broken typography or misaligned icons.
 
 ---
 
-## ۳. سیستم رنگ‌ها و گرادینت امضا (Color Tokens)
+## 2. Typography System
 
-### ۳.۱. جدول توکن‌های رنگی (Color Palette)
+The typography system uses **Estedad (استعداد)** as its primary variable font for all Persian UI copy, headings, and body text. Technical badges, load tracking numbers, vehicle license plates, and monetary values utilize a complementary **Monospace font** (JetBrains Mono / Vazirmatn Mono).
 
-| نام توکن | مقدار رنگ (Hex) | کاربرد و زمینه استفاده |
+### 2.1. Type Scale & Usage
+
+| Element | Size | Weight | Line Height (Leading) | Notes |
+| :--- | :--- | :--- | :--- | :--- |
+| **Hero Headline** | `text-4xl` to `text-6xl` | 800 (ExtraBold) | `leading-[1.15]` | Key headline words feature signature gradient text effect. |
+| **Section Headlines** | `text-2xl` to `text-4xl` | 700 (Bold) | `leading-snug` | Paired with entrance animations. |
+| **Card Titles** | `text-lg` to `text-xl` | 600 (SemiBold) | `leading-normal` | Designed for high scannability in load feeds. |
+| **Body Text** | `text-base` | 400 (Regular) | `leading-relaxed` (1.7) | Descriptions, cargo specifications, and notes. |
+| **Badges & Rates** | `text-xs` to `text-sm` | 500 (Medium) / Mono | `leading-none` | Tracking IDs, plate numbers, prices, and status tags. |
+
+---
+
+## 3. Color Strategy & Design Tokens
+
+### 3.1. Color Palette
+
+| Token Name | Hex Value | Context & Usage |
 | :--- | :--- | :--- |
-| `background` | `#FAFAFA` | بوم اصلی (سفید گرم متمایل به خاکستری بسیار روشن برای کاهش خستگی چشم). |
-| `foreground` | `#0F172A` (Slate-900) | رنگ اصلی متن و زمینه بخش‌های معکوس (Inverted Dark Sections). |
-| `muted` | `#F1F5F9` (Slate-100) | زمینه کارت‌های فرعی، فیلدها و سطوح غیرفعال. |
-| `muted-foreground` | `#64748B` (Slate-500) | متون ثانویه، توضیحات بار و متادیتا. |
-| `accent` | `#0052FF` (Electric Blue) | **رنگ اصلی اکشن‌ها.** دکمه‌های اصلی، هایلایت استاتوس، آیکون‌ها. |
-| `accent-secondary` | `#4D7CFF` | نقطه پایانی گرادینت (آبی آسمانی روشن). |
-| `card` | `#FFFFFF` | سطوح برجسته و کارت‌ها همراه با سایه نرم. |
-| `border` | `#E2E8F0` (Slate-200) | خطوط جداکننده و کادر کارت‌ها. |
-| `success` | `#10B981` (Emerald-500) | وضعیت "تحویل شد" یا "پرداخت موفق". |
-| `warning` | `#F59E0B` (Amber-500) | وضعیت "در حال بارگیری" یا "در انتظار قیمت". |
+| `background` | `#FAFAFA` | Main canvas (warm off-white reducing eye strain). |
+| `foreground` | `#0F172A` (Slate-900) | Primary text and background for inverted dark sections. |
+| `muted` | `#F1F5F9` (Slate-100) | Secondary surfaces, disabled inputs, and subtle card fills. |
+| `muted-foreground` | `#64748B` (Slate-500) | Secondary body text, load metadata, and timestamps. |
+| `accent` | `#0052FF` (Electric Blue) | **Primary Action Color.** CTAs, active highlights, icons. |
+| `accent-secondary` | `#4D7CFF` | Gradient endpoint (sky blue accent). |
+| `card` | `#FFFFFF` | Elevated surfaces and card containers. |
+| `border` | `#E2E8F0` (Slate-200) | Structural card borders and dividers. |
+| `success` | `#10B981` (Emerald-500) | "Delivered" state or successful payment. |
+| `warning` | `#F59E0B` (Amber-500) | "Loading in progress" or "Awaiting Quote" state. |
 
-### ۳.۲. گرادینت امضا (Signature Gradient)
+### 3.2. Signature Gradient
 ```css
-/* گرادینت اصلی آبی الکتریسیته برای دکمه‌ها و هایلایت‌ها */
+/* Electric Blue Gradient for Primary Actions & Text Highlights */
 background: linear-gradient(135deg, #0052FF 0%, #4D7CFF 100%);
 ```
 
 ---
 
-## ۴. قواعد چیدمان راست‌چین و فاصله‌گذاری (RTL & Layout Principles)
+## 4. RTL Layout & Directional Guidelines
 
-1. **جهت‌دهی افقی (Horizontal Flow):**
-   - تمامی کامپوننت‌ها به صورت راست‌چین (`dir="rtl"`) چیده می‌شوند.
-   - عناوین و متون راست‌چین (`text-right`).
-   - فلش‌های پیشروی و ادامه مسیر به سمت چپ اشاره می‌کنند (`<-` به جای `->`).
+1. **Horizontal Direction (`dir="rtl"`):**
+   - All main viewports and container trees use right-to-left orientation.
+   - Text elements are right-aligned (`text-right`).
+   - Progression and forward action icons point left (`ArrowLeft` instead of `ArrowRight`).
 
-2. **فاصله‌گذاری (Spacing Grid):**
-   - فاصله‌گذاری بخش‌ها: `py-16` تا `py-28` روی دسکتاپ.
-   - فاصله‌گذاری درون کارت‌ها: `p-5` تا `p-8`.
-   - فاصله شبکه (Grid Gaps): `gap-4` تا `gap-6`.
+2. **Spacing Grid:**
+   - Section padding: `py-16` to `py-28` on desktop.
+   - Card internal padding: `p-5` to `p-8`.
+   - Grid gaps: `gap-4` to `gap-6`.
 
 ---
 
-## ۵. استایل کامپوننت‌ها و تعاملات (Component Styling)
+## 5. Component Styling & Interactive Behaviors
 
-### ۵.۱. دکمه‌ها (Buttons)
+### 5.1. Buttons
 
-#### دکمه اصلی (Primary Button):
-- **زمینه:** گرادینت `from-[#0052FF] to-[#4D7CFF]`
-- **متن:** سفید (`#FFFFFF`) با وزن Bold 700
-- **شعاع شعاع انحنا:** `rounded-xl` (12px)
-- **سایه:** سایه با رنگ آبی الکتریسیته (`shadow-[0_4px_14px_rgba(0,82,255,0.25)]`)
-- **هاور:** صعود به بالا (`-translate-y-0.5`) + افزایش درخشش + جابه‌جایی آیکون فلش به سمت چپ.
+#### Primary Button:
+- **Background:** Gradient `from-[#0052FF] to-[#4D7CFF]`
+- **Typography:** White text, Bold 700 with **Estedad** font.
+- **Border Radius:** `rounded-xl` (12px)
+- **Shadow:** Electric blue accent glow (`shadow-[0_4px_14px_rgba(0,82,255,0.25)]`)
+- **Hover Behavior:** Lifts upward (`-translate-y-0.5`), increases glow shadow, and translates the left-pointing arrow icon (`-translate-x-1`).
 
 ```jsx
 <button className="group relative inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-l from-[#0052FF] to-[#4D7CFF] px-6 py-3.5 text-sm font-bold text-white shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(0,82,255,0.35)] active:scale-[0.98]">
@@ -103,35 +100,35 @@ background: linear-gradient(135deg, #0052FF 0%, #4D7CFF 100%);
 </button>
 ```
 
-#### دکمه ثانویه (Secondary Button):
-- **زمینه:** شفاف یا `muted`
-- **کادر:** `1px border-slate-200`
-- **متن:** `text-slate-900`
-- **هاور:** `bg-slate-100` + کادر آبی کم‌رنگ.
+#### Secondary Button:
+- **Background:** Transparent or `muted`
+- **Border:** `1px border-slate-200`
+- **Text:** `text-slate-900`
+- **Hover:** `bg-slate-100` + subtle accent border stroke.
 
 ---
 
-### ۵.۲. کارت‌های لیست بار (Load Cards)
+### 5.2. Load Feed Cards
 
-- **زمینه:** سفید خالص (`#FFFFFF`)
-- **کادر:** `border border-slate-200/80`
-- **شعاع:** `rounded-2xl`
-- **سایه:** `shadow-sm` در حالت عادی ➔ `shadow-xl` در حالت هاور
-- **هایلایت وضعیت:** نوار عمودی رنگی در سمت راست کارت جهت مشخص کردن استاتوس بار (*در انتظار ➔ اساین شده ➔ در مسیر ➔ تحویل*).
+- **Background:** Pure White (`#FFFFFF`)
+- **Border:** `border border-slate-200/80`
+- **Border Radius:** `rounded-2xl`
+- **Shadow:** `shadow-sm` default ➔ `shadow-xl` on hover
+- **RTL Vertical Status Bar:** A 6px vertical gradient bar attached to the **right edge** of the card indicating the lifecycle status (*Draft ➔ Approved ➔ Assigned ➔ In Transit ➔ Delivered*).
 
 ```jsx
 <div className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-  {/* نوار وضعیت عمودی در سمت راست */}
+  {/* Right-edge vertical status bar for RTL */}
   <div className="absolute right-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-[#0052FF] to-[#4D7CFF]" />
-  {/* محتوای کارت */}
+  {/* Card Content */}
 </div>
 ```
 
 ---
 
-### ۵.۳. برچسب‌های بخش‌ها و استاتوس (Badges & Status Tags)
+### 5.3. Pulsing Live Status Badges
 
-برچسب‌های بیضی‌شکل مجهز به نقطه نبض‌دار (Pulsing Dot) برای نشان دادن وضعیت زنده:
+Pill badges featuring continuous scale/opacity keyframe animation for real-time cargo status tracking:
 
 ```jsx
 <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-50/80 px-3.5 py-1.5 text-xs font-semibold text-[#0052FF]">
@@ -145,8 +142,8 @@ background: linear-gradient(135deg, #0052FF 0%, #4D7CFF 100%);
 
 ---
 
-## ۶. انیمیشن‌ها و عمق بصری (Motion & Texture)
+## 6. Motion & Texture Specification
 
-1. **انیمیشن نبض زنده (Pulsing Indicators):** جهت نمایش بارگیری فعال یا موقعیت مکانی کامیون.
-2. **بافت نقطه‌ای (Dot Matrix Texture):** استفاده از الگوی نقطه‌ای بسیار ملایم روی بخش‌های تیره معکوس (Inverted Dark Sections).
-3. **افکت Glassmorphism:** استفاده از `backdrop-blur-md` و `bg-white/80` برای نوار ناوبری بالای صفحه (Navbar).
+1. **Pulsing Live Indicators:** Signals active cargo loading or real-time GPS truck movement.
+2. **Subtle Dot Matrix Texture:** Radial dot pattern overlay at low opacity (`opacity: 0.03`) used on dark inverted contrast sections.
+3. **Glassmorphism:** Navigation bar uses `backdrop-blur-md` and `bg-white/80` for elevated depth.
