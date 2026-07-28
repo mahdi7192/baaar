@@ -1,5 +1,11 @@
-@import url('https://cdn.jsdelivr.net/gh/rastikerdar/estedad-font@v5.0.0/dist/font-face.css');
-@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
+@import "@fontsource/estedad/400.css";
+@import "@fontsource/estedad/500.css";
+@import "@fontsource/estedad/600.css";
+@import "@fontsource/estedad/700.css";
+@import "@fontsource/estedad/800.css";
+@import "@fontsource/estedad/900.css";
+@import "@fontsource/vazirmatn/400.css";
+@import "@fontsource/vazirmatn/700.css";
 @import "tailwindcss";
 
 @layer base {

@@ -11,6 +11,12 @@ importers:
       '@astrojs/react':
         specifier: ^6.0.2
         version: 6.0.2(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(esbuild@0.28.1)(jiti@2.7.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@fontsource/estedad':
+        specifier: ^5.3.0
+        version: 5.3.0
+      '@fontsource/vazirmatn':
+        specifier: ^5.3.0
+        version: 5.3.0
       '@tailwindcss/vite':
         specifier: ^4.3.3
         version: 4.3.3(vite@8.1.5(esbuild@0.28.1)(jiti@2.7.0))
@@ -443,6 +449,12 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource/estedad@5.3.0':
+    resolution: {integrity: sha512-gORXc4WfyTcOLxr+X+scZv7CrydZf6kHm+dimQCuHCzDrbfqh9HS452HbT9U/DJGvnnVk7HqnffU2zOtHKTOGg==}
+
+  '@fontsource/vazirmatn@5.3.0':
+    resolution: {integrity: sha512-XC/2yN2r5gwhFT3klSuWaqncODX2DOfRYfNmbyzgtWYxHxMC+tcoaX+tgggrm6hSkEgpR1TuSDEf1PiI91G7qg==}
 
   '@img/colour@1.1.0':
     resolution: {integrity: sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ==}
@@ -2348,6 +2360,10 @@ snapshots:
 
   '@esbuild/win32-x64@0.28.1':
     optional: true
+
+  '@fontsource/estedad@5.3.0': {}
+
+  '@fontsource/vazirmatn@5.3.0': {}
 
   '@img/colour@1.1.0':
     optional: true
