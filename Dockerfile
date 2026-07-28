@@ -9,8 +9,8 @@ RUN corepack enable && corepack prepare pnpm@latest --activate
 # Copy package dependency definition files
 COPY package.json pnpm-lock.yaml ./
 
-# Install dependencies cleanly
-RUN pnpm install --frozen-lockfile
+# Install dependencies cleanly (disabling minimum-release-age check for newly published packages)
+RUN pnpm install --frozen-lockfile --config.minimum-release-age=0
 
 # Copy application source code
 COPY . .
