@@ -1,23 +1,21 @@
-@import "@fontsource/estedad/400.css";
-@import "@fontsource/estedad/500.css";
-@import "@fontsource/estedad/600.css";
-@import "@fontsource/estedad/700.css";
-@import "@fontsource/estedad/800.css";
-@import "@fontsource/estedad/900.css";
-@import "@fontsource/vazirmatn/400.css";
-@import "@fontsource/vazirmatn/700.css";
+@import "@fontsource-variable/estedad/index.css";
+@import "@fontsource/estedad/index.css";
+@import "@fontsource/vazirmatn/index.css";
 @import "tailwindcss";
 
+@theme {
+  --font-sans: 'Estedad Variable', 'Estedad', 'Vazirmatn', system-ui, sans-serif;
+  --font-estedad: 'Estedad Variable', 'Estedad', 'Vazirmatn', system-ui, sans-serif;
+  --font-mono: 'Vazirmatn', monospace;
+}
+
 @layer base {
-  :root {
-    --font-estedad: 'Estedad', 'Vazirmatn', system-ui, sans-serif;
-    --font-mono: 'Vazirmatn', monospace;
-    --color-electric: #0052FF;
-    --color-electric-light: #4D7CFF;
+  *, ::before, ::after {
+    font-family: 'Estedad Variable', 'Estedad', 'Vazirmatn', system-ui, sans-serif;
   }
 
-  body {
-    font-family: var(--font-estedad);
+  html, body {
+    font-family: 'Estedad Variable', 'Estedad', 'Vazirmatn', system-ui, sans-serif;
     direction: rtl;
     background-color: #fafafa;
     color: #0f172a;
